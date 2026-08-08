@@ -336,7 +336,75 @@ The model was selected because it provides a more useful balance between detecti
 
 The trained model and configuration are stored in:
 
-```text
+```text ```
 models/
 ├── employee_attrition_model.pkl
 └── employee_attrition_config.pkl
+
+## 🔍 Feature Importance
+
+The final Logistic Regression model was analyzed using its learned coefficients to identify the features most strongly associated with employee attrition.
+
+### Top Influential Features
+
+| Feature | Model Coefficient |
+|---|---:|
+| Years at Company | +0.918 |
+| OverTime | +0.843 |
+| Years in Current Role | −0.723 |
+| Years with Current Manager | −0.537 |
+| Marital Status | +0.474 |
+| Number of Companies Worked | +0.428 |
+| Years Since Last Promotion | +0.405 |
+| Job Satisfaction | −0.394 |
+| Environment Satisfaction | −0.386 |
+| Total Working Years | −0.377 |
+
+Positive coefficients indicate an association with a higher predicted probability of attrition, while negative coefficients indicate an association with a lower predicted probability.
+
+> **Note:** Model coefficients represent statistical associations within the trained model and should not be interpreted as proof of causation. Categorical variables should also be interpreted in the context of their encoding.
+
+---
+
+## 💡 Business Insights
+
+The analysis suggests that employee attrition is influenced by a combination of workload, job satisfaction, career progression, compensation, travel requirements, and employee tenure.
+
+Key areas requiring attention include:
+
+- Employees working overtime
+- Employees with lower job satisfaction
+- Employees with lower environment satisfaction
+- Early-career and lower-level employees
+- Employees experiencing limited career progression
+- Employees with frequent business travel
+- Employees with shorter organizational tenure
+
+---
+
+## 🎯 Business Recommendations
+
+Based on the analysis, organizations could consider the following strategies:
+
+1. **Monitor overtime and workload**
+   - Review workload distribution and identify employees consistently working overtime.
+
+2. **Improve employee satisfaction**
+   - Conduct regular employee feedback and engagement surveys.
+
+3. **Strengthen career development**
+   - Provide clear promotion paths, training opportunities, and internal mobility programs.
+
+4. **Support early-career employees**
+   - Introduce mentoring, onboarding, and development programs for newer employees.
+
+5. **Review business travel requirements**
+   - Evaluate travel workloads and provide additional support to frequently traveling employees.
+
+6. **Use predictive analytics for early intervention**
+   - Use the model as an early-warning tool to identify employees who may require additional engagement or retention support.
+
+7. **Combine predictions with HR expertise**
+   - Model predictions should support—not replace—human judgment and employee context.
+
+---
