@@ -476,3 +476,78 @@ Use the model as an early-warning tool to identify employees who may require add
 Predictions should support HR decision-making rather than replace human judgment or employee-specific context.
 
 ---
+## 📊 Key Visualizations
+
+### Employee Attrition Distribution
+
+The dataset contains 1,470 employees:
+
+- **1,233 employees (83.9%)** stayed
+- **237 employees (16.1%)** left
+
+This class imbalance was considered during model development and evaluation.
+
+### Attrition by Overtime
+
+Employees working overtime showed a substantially higher attrition rate than employees who did not work overtime, highlighting workload and work-life balance as important areas for HR attention.
+
+### Attrition by Job Role
+
+Sales Representatives recorded the highest attrition rate at approximately **39.8%**, followed by Laboratory Technicians (**23.9%**) and Human Resources (**23.1%**).
+
+### Attrition by Job Satisfaction
+
+Employees with the lowest job satisfaction level recorded the highest attrition rate:
+
+- Satisfaction 1: **22.8%**
+- Satisfaction 2: **16.4%**
+- Satisfaction 3: **16.5%**
+- Satisfaction 4: **11.3%**
+
+### Model Performance
+
+The final Logistic Regression model achieved:
+
+- **84.35% Accuracy**
+- **43.14% Precision**
+- **56.41% Recall**
+- **48.89% F1 Score**
+- **75.9% ROC-AUC**
+
+The optimized threshold of **0.65** provided a better balance between identifying employees likely to leave and limiting false-positive predictions.
+
+---
+
+## 🏁 Conclusion
+
+This project demonstrates an end-to-end approach to employee attrition analysis using **Python, exploratory data analysis, and machine learning**.
+
+The analysis identified several important areas associated with employee turnover, including overtime, job satisfaction, career progression, tenure, business travel, compensation, and job characteristics.
+
+Multiple classification algorithms were evaluated, with **class-weighted Logistic Regression** selected as the final model after considering the imbalance between employees who stayed and those who left.
+
+Threshold optimization further improved the model's ability to identify potential attrition cases, achieving a **56.41% recall** and **48.89% F1 score** at a threshold of **0.65**.
+
+The project demonstrates how data-driven analysis can help HR teams identify potential retention risks and support more targeted employee engagement strategies.
+
+---
+
+## 🚀 Future Improvements
+
+- Build an interactive **Power BI HR Attrition Dashboard**
+- Develop a web-based employee attrition prediction application
+- Experiment with advanced ensemble models
+- Perform hyperparameter optimization
+- Apply explainable AI techniques such as SHAP
+- Evaluate the model on additional HR datasets
+- Implement continuous model monitoring and retraining
+
+---
+
+## 📌 Project Outcome
+
+**End-to-end Employee Attrition Analytics & Prediction**
+
+**Data → EDA → Feature Engineering → ML Models → Class Balancing → Threshold Optimization → Feature Analysis → Business Insights**
+
+---
