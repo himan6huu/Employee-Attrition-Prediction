@@ -408,3 +408,71 @@ Based on the analysis, organizations could consider the following strategies:
    - Model predictions should support—not replace—human judgment and employee context.
 
 ---
+
+## 🔍 Feature Importance
+
+The final Logistic Regression model was analyzed using its learned coefficients to identify the features most strongly associated with employee attrition.
+
+### Top Influential Features
+
+| Feature | Coefficient |
+|---|---:|
+| Years at Company | +0.918 |
+| OverTime | +0.843 |
+| Years in Current Role | −0.723 |
+| Years with Current Manager | −0.537 |
+| Marital Status | +0.474 |
+| Number of Companies Worked | +0.428 |
+| Years Since Last Promotion | +0.405 |
+| Job Satisfaction | −0.394 |
+| Environment Satisfaction | −0.386 |
+| Total Working Years | −0.377 |
+
+Positive coefficients indicate an association with a higher predicted probability of attrition, while negative coefficients indicate an association with a lower predicted probability.
+
+> **Note:** These coefficients represent model associations, not causal relationships.
+
+---
+
+## 💡 Business Insights
+
+The analysis indicates that employee attrition is associated with multiple factors, including:
+
+- Overtime and workload
+- Job satisfaction
+- Environment satisfaction
+- Career progression
+- Employee tenure
+- Job level
+- Business travel
+- Compensation
+- Job role
+
+The findings suggest that employee retention should be approached using a combination of workload management, career development, employee engagement, and workplace improvements.
+
+---
+
+## 🎯 Business Recommendations
+
+### 1. Monitor Overtime and Workload
+Identify employees who consistently work overtime and review workload distribution to reduce excessive work pressure.
+
+### 2. Improve Employee Satisfaction
+Use regular employee feedback and engagement surveys to identify workplace concerns early.
+
+### 3. Strengthen Career Development
+Provide clear promotion paths, training opportunities, mentoring, and internal mobility programs.
+
+### 4. Support Early-Career Employees
+Focus retention programs on newer and lower-level employees through structured onboarding and career development.
+
+### 5. Review Business Travel
+Evaluate travel requirements for frequently traveling employees and provide appropriate workload and work-life balance support.
+
+### 6. Use Predictive Analytics for Early Intervention
+Use the model as an early-warning tool to identify employees who may require additional engagement or retention support.
+
+### 7. Combine ML Predictions with HR Expertise
+Predictions should support HR decision-making rather than replace human judgment or employee-specific context.
+
+---
