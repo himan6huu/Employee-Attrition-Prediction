@@ -551,3 +551,90 @@ The project demonstrates how data-driven analysis can help HR teams identify pot
 **Data → EDA → Feature Engineering → ML Models → Class Balancing → Threshold Optimization → Feature Analysis → Business Insights**
 
 ---
+## 🤖 Machine Learning & Model Performance
+
+The project uses supervised machine learning to predict whether an employee is likely to leave the organization.
+
+### 🎯 Target Variable
+
+The `Attrition` variable was converted into binary form:
+
+- `0` → Stayed
+- `1` → Left
+
+The dataset contains **1,470 employees**, with **237 employees who left** and **1,233 employees who stayed**.
+
+### 🧠 Models Evaluated
+
+Three classification algorithms were compared:
+
+| Model | Accuracy | Precision | Recall | F1 Score |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 89.12% | 68.42% | 33.33% | 44.83% |
+| Random Forest | 86.39% | 44.44% | 10.26% | 16.67% |
+| Decision Tree | 76.55% | 15.91% | 17.95% | 16.87% |
+
+Initial evaluation showed that **Logistic Regression** provided the strongest overall performance.
+
+### ⚖️ Handling Class Imbalance
+
+Since employee attrition is an imbalanced classification problem, additional evaluation was performed using class-balanced Logistic Regression.
+
+The model achieved:
+
+- Accuracy: **71.68%**
+- Precision: **26.09%**
+- Recall: **61.54%**
+- F1 Score: **36.64%**
+- ROC-AUC: **0.759**
+
+The improved recall demonstrates that balancing the classes helped the model identify more employees at risk of leaving.
+
+### 🎚️ Threshold Optimization
+
+Instead of relying on the default classification threshold of `0.50`, multiple probability thresholds were evaluated.
+
+The optimal threshold was identified as:
+
+**0.65**
+
+At this threshold:
+
+- Accuracy: **84.35%**
+- Precision: **43.14%**
+- Recall: **56.41%**
+- F1 Score: **48.89%**
+
+This threshold provided a better balance between identifying potential leavers and limiting false positives.
+
+### 📈 Final Model
+
+**Final Model: Logistic Regression**
+
+**Classification Threshold: 0.65**
+
+The final model achieved an **F1 Score of 48.89%** and **Recall of 56.41%** for employees who left, making it more suitable for identifying potential attrition risks than relying solely on overall accuracy.
+
+### 🔍 Model Interpretability
+
+Feature coefficients were analyzed to understand the factors associated with employee attrition.
+
+The strongest factors included:
+
+- Years at Company
+- Overtime
+- Years in Current Role
+- Years with Current Manager
+- Marital Status
+- Number of Companies Worked
+- Years Since Last Promotion
+- Job Satisfaction
+- Environment Satisfaction
+- Total Working Years
+- Job Involvement
+- Monthly Income
+- Department
+- Distance From Home
+- Job Level
+
+This makes the model not only predictive but also useful for understanding potential drivers of employee turnover.
