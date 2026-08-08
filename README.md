@@ -258,3 +258,84 @@ Important areas identified include:
 - Tenure and career progression
 
 These findings were used to guide the subsequent machine learning analysis.
+## 🤖 Machine Learning
+
+### Models Evaluated
+
+Three classification algorithms were evaluated:
+
+- Logistic Regression
+- Random Forest
+- Decision Tree
+
+Because employee attrition is an imbalanced classification problem, model evaluation focused not only on accuracy but also on **Precision, Recall, F1 Score, and ROC-AUC**.
+
+### 📊 Initial Model Comparison
+
+| Model | Accuracy | Precision | Recall | F1 Score |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 89.1% | 68.4% | 33.3% | 44.8% |
+| Random Forest | 86.4% | 44.4% | 10.3% | 16.7% |
+| Decision Tree | 76.5% | 15.9% | 17.9% | 16.9% |
+
+Although the original Logistic Regression model achieved the highest accuracy, its recall for employees who left was relatively low.
+
+Since identifying potential employee attrition is the primary objective, accuracy alone was not considered sufficient for selecting the final model.
+
+---
+
+## ⚖️ Class Imbalance Handling
+
+The dataset contains significantly more employees who stayed than employees who left.
+
+To improve detection of the minority class, **class-weighted Logistic Regression** was evaluated.
+
+The balanced model increased recall for employees who left from approximately **33.3% to 61.5%**.
+
+This improvement came with a reduction in overall accuracy and precision, demonstrating the trade-off between correctly identifying attrition cases and generating false positive predictions.
+
+---
+
+## 🎯 Threshold Optimization
+
+The default classification threshold of 0.50 was further evaluated using multiple probability thresholds.
+
+The objective was to find a better balance between:
+
+- Precision
+- Recall
+- F1 Score
+
+The optimized threshold was **0.65**.
+
+At this threshold, the final model achieved:
+
+| Metric | Result |
+|---|---:|
+| Accuracy | **84.35%** |
+| Precision | **43.14%** |
+| Recall | **56.41%** |
+| F1 Score | **48.89%** |
+| ROC-AUC | **75.9%** |
+| Decision Threshold | **0.65** |
+
+The optimized model correctly identified **22 of the 39 employees who left** in the test set.
+
+---
+
+## 🏆 Final Model
+
+The final model selected for the project is:
+
+**Class-Weighted Logistic Regression**
+
+with an optimized prediction threshold of **0.65**.
+
+The model was selected because it provides a more useful balance between detecting employees who may leave and limiting false-positive predictions compared with the initial models.
+
+The trained model and configuration are stored in:
+
+```text
+models/
+├── employee_attrition_model.pkl
+└── employee_attrition_config.pkl
