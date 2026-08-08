@@ -66,3 +66,56 @@ The raw dataset is stored inside:
 
 ```text
 data/raw/
+## ⚙️ Project Workflow
+
+The project follows an end-to-end analytics and machine learning workflow:
+
+1. **Data Collection**
+   - Load the IBM HR Analytics Employee Attrition dataset.
+
+2. **Data Understanding**
+   - Examine dataset structure, data types, distributions, and target variable.
+
+3. **Data Cleaning & Preparation**
+   - Check for missing values and duplicate records.
+   - Prepare numerical and categorical variables for analysis.
+
+4. **Exploratory Data Analysis**
+   - Analyze attrition patterns across employee demographics, compensation, job characteristics, satisfaction, overtime, travel, and tenure.
+
+5. **Feature Preparation**
+   - Encode categorical variables.
+   - Separate features and target variable.
+   - Split the dataset into training and testing sets.
+   - Standardize features for model training.
+
+6. **Model Development**
+   - Logistic Regression
+   - Random Forest
+   - Decision Tree
+
+7. **Model Evaluation**
+   - Accuracy
+   - Precision
+   - Recall
+   - F1 Score
+   - ROC-AUC
+   - Confusion Matrix
+
+8. **Class Imbalance Handling**
+   - Apply class weighting to improve detection of employees who leave.
+
+9. **Threshold Optimization**
+   - Evaluate different probability thresholds.
+   - Select an optimized threshold based on F1 Score.
+
+10. **Feature Importance Analysis**
+    - Examine model coefficients to identify influential factors associated with attrition.
+
+11. **Business Insights**
+    - Translate analytical findings into actionable HR insights.
+
+12. **Business Recommendations**
+    - Suggest strategies focused on employee retention and early intervention.
+
+---
