@@ -66,6 +66,7 @@ The raw dataset is stored inside:
 
 ```text
 data/raw/
+```
 ## ⚙️ Project Workflow
 
 The project follows an end-to-end analytics and machine learning workflow:
