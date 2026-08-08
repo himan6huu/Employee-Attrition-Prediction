@@ -638,3 +638,262 @@ The strongest factors included:
 - Job Level
 
 This makes the model not only predictive but also useful for understanding potential drivers of employee turnover.
+
+## 📊 Visualizations & Key Insights
+
+### 1. Employee Attrition Distribution
+
+The dataset contains **1,470 employees**, of which:
+
+- **1,233 (83.9%)** stayed with the company.
+- **237 (16.1%)** left the company.
+
+This highlights a significant class imbalance, which was considered during model development.
+
+---
+
+### 2. Attrition Rate by Overtime
+
+Employees working overtime show a substantially higher attrition rate:
+
+- **OverTime = Yes:** 30.5%
+- **OverTime = No:** 10.4%
+
+This indicates that excessive workload and overtime may be important contributors to employee attrition.
+
+---
+
+### 3. Attrition Rate by Job Role
+
+The highest attrition rate was observed among:
+
+- **Sales Representatives:** 39.8%
+- **Laboratory Technicians:** 23.9%
+- **Human Resources:** 23.1%
+
+Sales Representatives show particularly high attrition compared with other job roles.
+
+---
+
+### 4. Attrition Rate by Job Satisfaction
+
+Employees with lower job satisfaction have higher attrition:
+
+| Job Satisfaction | Attrition Rate |
+|---|---:|
+| 1 | 22.8% |
+| 2 | 16.4% |
+| 3 | 16.5% |
+| 4 | 11.3% |
+
+The results suggest that improving employee satisfaction may help reduce turnover.
+
+---
+
+### 5. Attrition Rate by Environment Satisfaction
+
+Employees with the lowest environment satisfaction experienced the highest attrition:
+
+- Satisfaction Level 1: **25.4%**
+- Satisfaction Level 2: **15.0%**
+- Satisfaction Level 3: **13.7%**
+- Satisfaction Level 4: **13.5%**
+
+---
+
+### 6. Attrition Rate by Business Travel
+
+Employees who travel frequently have substantially higher attrition:
+
+- **Travel Frequently:** 24.9%
+- **Travel Rarely:** 15.0%
+- **Non-Travel:** 8.0%
+
+Frequent business travel appears to be an important factor associated with employee turnover.
+
+---
+
+### 7. Attrition Rate by Job Level
+
+The highest attrition occurs at lower job levels:
+
+- **Job Level 1:** 26.3%
+- **Job Level 2:** 9.7%
+- **Job Level 3:** 14.7%
+- **Job Level 4:** 4.7%
+- **Job Level 5:** 7.2%
+
+This suggests that early-career and lower-level employees may require greater retention support.
+
+---
+
+### 8. Monthly Income and Attrition
+
+The boxplot shows that employees who left generally had a lower monthly income distribution compared with employees who stayed.
+
+This indicates that compensation may be associated with employee retention, although income alone should not be interpreted as a direct cause of attrition.
+
+---
+
+### 9. Distance From Home
+
+Employees who left tend to show a higher median distance from home compared with employees who stayed.
+
+Longer commuting distances may therefore contribute to employee turnover.
+
+---
+
+### 10. Years at Company
+
+Employees who left generally have fewer years at the company than employees who stayed.
+
+This suggests that employees may be more vulnerable to attrition during the earlier stages of their employment.
+
+---
+
+## 🤖 Model Performance
+
+Three classification models were evaluated:
+
+| Model | Accuracy | Precision | Recall | F1 Score |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 89.12% | 68.42% | 33.33% | 44.83% |
+| Random Forest | 86.39% | 44.44% | 10.26% | 16.67% |
+| Decision Tree | 76.53% | 15.90% | 17.95% | 16.87% |
+
+Logistic Regression provided the strongest overall performance among the initial models.
+
+Because employee attrition is an imbalanced classification problem, additional evaluation focused on improving the detection of employees who are likely to leave.
+
+---
+
+## ⚖️ Balanced Logistic Regression
+
+A balanced Logistic Regression model was evaluated to give greater importance to the minority **Left** class.
+
+The balanced model achieved:
+
+- Accuracy: **71.77%**
+- Precision: **26.09%**
+- Recall: **61.54%**
+- F1 Score: **36.64%**
+- ROC-AUC: **0.759**
+
+The major improvement was in **recall for employees who left**, increasing from approximately **33% to 62%**.
+
+This demonstrates the trade-off between overall accuracy and the ability to identify potential employee attrition.
+
+---
+
+## 🎯 Threshold Optimization
+
+The classification threshold was optimized to improve the balance between precision and recall.
+
+The selected threshold was:
+
+**0.65**
+
+Final performance:
+
+- Accuracy: **84.35%**
+- Precision: **43.13%**
+- Recall: **56.41%**
+- F1 Score: **48.89%**
+
+At this threshold, the model provides a better balance between correctly identifying employees likely to leave and maintaining overall predictive performance.
+
+---
+
+## 📈 ROC-AUC
+
+The Random Forest model achieved a ROC-AUC of approximately:
+
+**0.706**
+
+The Logistic Regression model achieved a ROC-AUC of approximately:
+
+**0.759**
+
+The Logistic Regression model therefore demonstrated stronger discrimination between employees who stayed and employees who left.
+
+---
+
+## 🔍 Feature Importance
+
+The Logistic Regression coefficients identified several important factors associated with employee attrition.
+
+### Strong positive contributors
+
+- **YearsAtCompany**
+- **OverTime**
+- **MaritalStatus**
+- **NumCompaniesWorked**
+- **YearsSinceLastPromotion**
+- **Department**
+- **DistanceFromHome**
+
+### Strong negative contributors
+
+- **YearsInCurrentRole**
+- **YearsWithCurrManager**
+- **JobSatisfaction**
+- **EnvironmentSatisfaction**
+- **TotalWorkingYears**
+- **JobInvolvement**
+- **MonthlyIncome**
+- **JobLevel**
+
+The coefficients represent model associations and should not be interpreted as proof of direct causation.
+
+---
+
+## 💡 Business Insights
+
+The analysis highlights several areas that organizations could investigate to reduce employee attrition:
+
+1. **Reduce excessive overtime** and monitor employee workload.
+2. **Improve job satisfaction**, particularly among dissatisfied employees.
+3. **Pay greater attention to lower job levels**, where attrition is substantially higher.
+4. **Review high-risk job roles**, particularly Sales Representatives.
+5. **Support employees with long commutes** or greater distance from the workplace.
+6. **Monitor employees with frequent business travel**.
+7. **Strengthen early-career retention strategies** for employees with fewer years at the company.
+8. **Use predictive analytics** to identify employees who may require proactive retention support.
+
+---
+
+## ⚠️ Limitations
+
+- The dataset is imbalanced, with substantially more employees staying than leaving.
+- Model performance depends on the available features and historical dataset.
+- Correlation and model coefficients do not establish causation.
+- The dataset represents a specific organizational context and may not generalize to every company.
+- Predictive models should support HR decision-making rather than replace human judgment.
+
+---
+
+## 🚀 Future Improvements
+
+Future versions of the project could include:
+
+- Hyperparameter tuning using GridSearchCV or RandomizedSearchCV.
+- Advanced ensemble models such as XGBoost or Gradient Boosting.
+- Cross-validation for more robust model evaluation.
+- Advanced class-imbalance techniques such as SMOTE.
+- Model explainability using SHAP.
+- Interactive Power BI dashboards.
+- Deployment as a web application using Flask or Streamlit.
+- Automated employee attrition risk scoring.
+- Integration with real-time HR analytics data.
+
+---
+
+## 🏁 Conclusion
+
+This project developed an end-to-end **Employee Attrition Prediction System** using exploratory data analysis, machine learning, model evaluation, threshold optimization, and feature analysis.
+
+The analysis identified **OverTime, job role, job satisfaction, environment satisfaction, business travel, job level, distance from home, and employment duration** as important factors associated with employee attrition.
+
+Among the evaluated approaches, **Logistic Regression** provided the strongest overall results. After balancing and threshold optimization, the final model achieved an **F1 Score of 48.89%** and **recall of 56.41%** for the attrition class.
+
+The project demonstrates how machine learning can be applied to HR analytics to identify potential attrition risks and provide data-driven insights that can support employee retention strategies.
