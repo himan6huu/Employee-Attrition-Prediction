@@ -41,3 +41,28 @@ This project aims to answer questions such as:
 - How can HR teams use these insights to improve retention strategies?
 
 ---
+## 📂 Dataset
+
+**Dataset:** IBM HR Analytics Employee Attrition & Performance Dataset
+
+The dataset contains employee-level information covering demographics, job characteristics, compensation, satisfaction, work experience, and other factors related to employee attrition.
+
+### Key Attributes
+
+- Employee demographics
+- Job role and job level
+- Monthly income
+- Overtime
+- Business travel
+- Job satisfaction
+- Environment satisfaction
+- Years at company
+- Years in current role
+- Years with current manager
+- Distance from home
+- Attrition status
+
+The raw dataset is stored inside:
+
+```text
+data/raw/
