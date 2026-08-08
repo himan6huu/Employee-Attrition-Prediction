@@ -119,3 +119,142 @@ The project follows an end-to-end analytics and machine learning workflow:
     - Suggest strategies focused on employee retention and early intervention.
 
 ---
+## 📊 Exploratory Data Analysis
+
+The exploratory analysis was performed to understand which employee characteristics are associated with higher attrition.
+
+### 🔎 Key Findings
+
+#### 1. Overall Attrition
+
+The dataset contains **1,470 employees**, with approximately **16.1%** classified as having left the organization.
+
+This indicates a significant class imbalance between employees who stayed and employees who left.
+
+---
+
+#### 2. Overtime and Attrition
+
+Employees working overtime show substantially higher attrition compared with employees who do not work overtime.
+
+This suggests that workload and work-life balance may be important areas for employee retention.
+
+---
+
+#### 3. Job Role and Attrition
+
+**Sales Representatives** have the highest observed attrition rate at approximately **39.8%**.
+
+Other roles such as Laboratory Technicians and Human Resources also show relatively higher attrition compared with roles such as Research Director and Manager.
+
+---
+
+#### 4. Monthly Income and Attrition
+
+Employees who left had lower monthly income on average:
+
+- Employees who stayed: **Mean = 6,832.74**
+- Employees who left: **Mean = 4,787.09**
+
+The median monthly income was also lower among employees who left.
+
+This suggests that compensation may be associated with employee retention.
+
+---
+
+#### 5. Age and Attrition
+
+Employees who left were generally younger:
+
+- Employees who stayed: **Mean age = 37.56**
+- Employees who left: **Mean age = 33.61**
+
+This suggests that younger employees may have a higher tendency to leave.
+
+---
+
+#### 6. Job Satisfaction and Attrition
+
+Attrition was highest among employees with the lowest job satisfaction:
+
+| Job Satisfaction | Attrition Rate |
+|---|---:|
+| 1 | 22.8% |
+| 2 | 16.4% |
+| 3 | 16.5% |
+| 4 | 11.3% |
+
+The results suggest an association between lower job satisfaction and higher attrition.
+
+---
+
+#### 7. Years at Company and Attrition
+
+Employees who left generally had shorter tenure:
+
+- Employees who stayed: **Mean = 7.37 years**
+- Employees who left: **Mean = 5.13 years**
+- Median tenure: **6 years vs 3 years**
+
+This highlights the importance of onboarding, engagement, career development, and early employee retention.
+
+---
+
+#### 8. Job Level and Attrition
+
+**Job Level 1** had the highest observed attrition rate at approximately **26.3%**, while Job Level 4 had the lowest at approximately **4.7%**.
+
+This suggests that early-career employees may require additional retention and career-development support.
+
+---
+
+#### 9. Business Travel and Attrition
+
+Employees who travel frequently had the highest attrition rate:
+
+| Business Travel | Attrition Rate |
+|---|---:|
+| Travel Frequently | 24.9% |
+| Travel Rarely | 15.0% |
+| Non-Travel | 8.0% |
+
+Frequent business travel may be associated with higher attrition, potentially due to workload or work-life balance considerations.
+
+---
+
+#### 10. Distance From Home and Attrition
+
+Employees who left had a higher average distance from home:
+
+- Employees who stayed: **Mean = 8.92**
+- Employees who left: **Mean = 10.63**
+
+The relationship appears weaker than some of the other factors, so distance from home should be considered alongside other employee characteristics.
+
+---
+
+#### 11. Environment Satisfaction and Attrition
+
+Lower environment satisfaction was associated with higher employee attrition.
+
+This suggests that workplace conditions and employee experience may play a role in retention.
+
+---
+
+### 📌 Overall EDA Takeaway
+
+The exploratory analysis indicates that employee attrition is associated with multiple factors rather than a single variable.
+
+Important areas identified include:
+
+- Overtime and workload
+- Compensation
+- Job satisfaction
+- Environment satisfaction
+- Job role
+- Job level
+- Business travel
+- Employee age
+- Tenure and career progression
+
+These findings were used to guide the subsequent machine learning analysis.
