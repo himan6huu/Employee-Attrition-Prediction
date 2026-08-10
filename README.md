@@ -126,6 +126,44 @@ Employee-Attrition-Prediction/
 ---
 ```
 
+---
+
+## 📊 Key Visualizations
+
+### 1. Attrition Distribution
+
+![Attrition Distribution](images/charts/attrition_distribution.png)
+
+### 2. Attrition by Overtime
+
+![Attrition by Overtime](images/charts/attrition_by_overtime.png)
+
+### 3. Attrition by Job Role
+
+![Attrition by Job Role](images/charts/attrition_by_job_role.png)
+
+### 4. Attrition by Job Satisfaction
+
+![Attrition by Job Satisfaction](images/charts/attrition_by_job_satisfaction.png)
+
+### 5. Monthly Income vs Attrition
+
+![Monthly Income vs Attrition](images/charts/monthly_income_vs_attrition.png)
+
+### 6. Feature Importance
+
+![Feature Importance](images/charts/feature_importance.png)
+
+### 7. Model Performance
+
+![Model Performance](images/charts/model_performance.png)
+
+### 8. ROC Curve
+
+![ROC Curve](images/charts/roc_curve.png)
+
+---
+
 ## 🔄 Project Workflow
 
 ```text
