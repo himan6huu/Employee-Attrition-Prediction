@@ -262,27 +262,34 @@ The analysis identifies several employee characteristics associated with attriti
 ```bash
 git clone https://github.com/himan6huu/Employee-Attrition-Prediction.git
 cd Employee-Attrition-Prediction
+```
 
-## 🔄 Project Workflow
+### 2. Install Dependencies
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+```
+
+### 3. Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
 
 ```text
-Raw Dataset
-     ↓
-Data Understanding
-     ↓
-Data Cleaning & Preprocessing
-     ↓
-Exploratory Data Analysis
-     ↓
-Feature Analysis
-     ↓
-Train-Test Split
-     ↓
-Model Training
-     ↓
-Model Evaluation
-     ↓
-Feature Interpretation
-     ↓
-Final Attrition Prediction
+python/notebooks/employee_attrition_analysis.ipynb
 ```
+
+### 4. Run the Analysis
+
+Run the notebook cells sequentially to reproduce:
+
+- Data preprocessing
+- Exploratory data analysis
+- Feature engineering
+- Model training
+- Model evaluation
+- Feature importance analysis
+- Visualization outputs
