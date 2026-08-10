@@ -254,6 +254,15 @@ The analysis identifies several employee characteristics associated with attriti
 
 > **Note:** Model predictions should support HR decision-making rather than replace human judgment. They should be used alongside employee feedback, organizational context, and appropriate privacy and fairness practices.
 
+
+## 🚀 How to Run
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/himan6huu/Employee-Attrition-Prediction.git
+cd Employee-Attrition-Prediction
+
 ## 🔄 Project Workflow
 
 ```text
