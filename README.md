@@ -298,3 +298,26 @@ Run the notebook cells sequentially to reproduce:
 - Model evaluation
 - Feature importance analysis
 - Visualization outputs
+
+  ---
+
+## 🔮 Limitations & Future Improvements
+
+### Current Limitations
+
+- The model is trained on a historical employee dataset and may not represent current workforce conditions.
+- Predictions depend on the quality and relevance of the available employee attributes.
+- Employee attrition is influenced by organizational and personal factors that may not be fully captured in the dataset.
+- Model predictions should be used as decision-support information rather than as the sole basis for HR decisions.
+
+### Future Improvements
+
+- Deploy the prediction model as an interactive web application.
+- Add real-time employee data integration.
+- Implement model monitoring and periodic retraining.
+- Explore advanced ensemble and gradient-boosting algorithms.
+- Add explainable AI techniques such as SHAP for individual prediction explanations.
+- Develop an interactive Power BI dashboard for HR analytics.
+- Implement automated risk reporting for high-risk employee segments.
+
+---
