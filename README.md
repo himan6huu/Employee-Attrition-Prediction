@@ -189,6 +189,22 @@ Employee-Attrition-Prediction/
 
 ## 💡 Key Business Insights
 
+The analysis highlights several employee attributes associated with attrition:
+
+- ⏰ **Overtime:** Overtime is an important factor to consider when assessing employee attrition risk.
+- ✈️ **Business Travel:** Employees with different travel frequencies show different attrition patterns.
+- 😊 **Job Satisfaction:** Lower satisfaction levels are associated with higher employee attrition risk.
+- 🏢 **Environment Satisfaction:** Workplace environment satisfaction provides additional insight into employee turnover.
+- 💼 **Job Level & Role:** Attrition patterns vary across different job levels and job roles.
+- 💰 **Monthly Income:** Compensation levels show a relationship with employee attrition patterns.
+- 📍 **Distance From Home:** Commuting distance is another factor considered in the attrition analysis.
+- 📅 **Years at Company:** Employee tenure helps identify differences in attrition patterns across experience levels.
+- 🎯 **Feature Importance:** Feature analysis was used to identify the variables contributing most to the predictive model.
+
+These findings can help HR teams focus retention efforts on employees and workforce segments with higher potential attrition risk.
+
+## 💡 Key Business Insights
+
 - **Overtime is a major attrition indicator** — employees working overtime show noticeably higher attrition.
 - **Job satisfaction is associated with employee retention** — lower satisfaction levels are linked with increased attrition.
 - **Job role influences attrition risk** — attrition varies considerably across different job roles.
