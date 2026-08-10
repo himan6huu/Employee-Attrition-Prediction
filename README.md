@@ -86,33 +86,35 @@ The dataset contains employee-level information such as:
 Employee-Attrition-Prediction/
 │
 ├── data/
-│   └── raw/
-│       └── WA_Fn-UseC_-HR-Employee-Attrition.csv
+│   ├── raw/
+│   │   └── WA_Fn-UseC_-HR-Employee-Attrition.csv
+│   └── processed/
 │
 ├── images/
-│   └── charts/
-│       ├── attrition_by_business_travel.png
-│       ├── attrition_by_environment_satisfaction.png
-│       ├── attrition_by_job_level.png
-│       ├── attrition_by_job_role.png
-│       ├── attrition_by_job_satisfaction.png
-│       ├── attrition_by_overtime.png
-│       ├── attrition_distribution.png
-│       ├── balanced_logistic_confusion_matrix.png
-│       ├── distance_from_home_vs_attrition.png
-│       ├── feature_importance.png
-│       ├── final_logistic_confusion_matrix.png
-│       ├── model_performance.png
-│       ├── monthly_income_vs_attrition.png
-│       ├── random_forest_confusion_matrix.png
-│       ├── roc_curve.png
-│       └── years_at_company_vs_attrition.png
+│   ├── charts/
+│   │   ├── attrition_by_business_travel.png
+│   │   ├── attrition_by_environment_satisfaction.png
+│   │   ├── attrition_by_job_level.png
+│   │   ├── attrition_by_job_role.png
+│   │   ├── attrition_by_job_satisfaction.png
+│   │   ├── attrition_by_overtime.png
+│   │   ├── attrition_distribution.png
+│   │   ├── balanced_logistic_confusion_matrix.png
+│   │   ├── distance_from_home_vs_attrition.png
+│   │   ├── feature_importance.png
+│   │   ├── final_logistic_confusion_matrix.png
+│   │   ├── model_performance.png
+│   │   ├── monthly_income_vs_attrition.png
+│   │   ├── random_forest_confusion_matrix.png
+│   │   ├── roc_curve.png
+│   │   └── years_at_company_vs_attrition.png
 │
 ├── models/
 │   ├── employee_attrition_config.pkl
 │   └── employee_attrition_model.pkl
 │
 ├── python/
+│   ├── models/
 │   └── notebooks/
 │       └── employee_attrition_analysis.ipynb
 │
@@ -120,10 +122,9 @@ Employee-Attrition-Prediction/
 ├── reports/
 ├── sql/
 ├── docs/
+│
 ├── .gitignore
 └── README.md
-```
-
 
 ```markdown
 ## 🔗 Key Files
