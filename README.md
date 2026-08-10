@@ -220,6 +220,40 @@ Model performance was evaluated using:
 
 The project also compares model predictions using ROC curves and confusion matrices to understand both overall performance and classification errors.
 
+## 📌 Results & Business Recommendations
+
+### Key Findings
+
+The analysis identifies several employee characteristics associated with attrition risk, including:
+
+- Overtime and workload
+- Job satisfaction
+- Job role
+- Business travel
+- Job level
+- Monthly income
+- Distance from home
+- Years at the company
+
+### Recommended HR Actions
+
+1. **Monitor overtime workload**  
+   Identify employees with sustained overtime and review workload distribution.
+
+2. **Improve employee satisfaction**  
+   Use regular feedback and engagement initiatives to identify dissatisfaction early.
+
+3. **Develop role-specific retention strategies**  
+   Analyze high-attrition roles and introduce targeted engagement and career-development programs.
+
+4. **Review compensation and career progression**  
+   Ensure compensation and promotion opportunities remain competitive across job levels.
+
+5. **Use predictive analytics for early intervention**  
+   Apply the trained model to identify employees who may require proactive retention support.
+
+> **Note:** Model predictions should support HR decision-making rather than replace human judgment. They should be used alongside employee feedback, organizational context, and appropriate privacy and fairness practices.
+
 ## 🔄 Project Workflow
 
 ```text
