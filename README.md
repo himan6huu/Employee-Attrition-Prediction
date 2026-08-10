@@ -102,7 +102,6 @@ Employee-Attrition-Prediction/
 └── README.md
 ```
 
-Then add a **Key Files** section:
 
 ```markdown
 ## 🔗 Key Files
