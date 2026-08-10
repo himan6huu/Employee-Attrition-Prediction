@@ -321,3 +321,24 @@ Run the notebook cells sequentially to reproduce:
 - Implement automated risk reporting for high-risk employee segments.
 
 ---
+
+---
+
+## 📄 License
+
+This project is intended for educational and portfolio purposes.
+
+You are free to use, modify, and adapt the code for learning and non-commercial purposes with appropriate attribution.
+
+---
+
+## 👤 Author
+
+**Himanshu Kumar**
+
+- GitHub: [@himan6huu](https://github.com/himan6huu)
+- Project: [Employee Attrition Prediction](https://github.com/himan6huu/Employee-Attrition-Prediction)
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
