@@ -34,6 +34,28 @@ The objective of this project is to:
 
 ---
 
+## 🛠️ Tech Stack
+
+### Programming & Analysis
+- 🐍 **Python** — Data analysis, preprocessing, and machine learning
+- 🐼 **Pandas** — Data manipulation and analysis
+- 🔢 **NumPy** — Numerical computations
+
+### Data Visualization
+- 📊 **Matplotlib** — Data visualization and analytical charts
+- 🎨 **Seaborn** — Statistical visualization
+
+### Machine Learning
+- 🤖 **Scikit-learn** — Model development and evaluation
+- 📈 **Logistic Regression** — Classification baseline
+- 🌲 **Random Forest** — Ensemble classification model
+- 🌳 **Decision Tree** — Tree-based classification model
+
+### Development Environment
+- 📓 **Jupyter Notebook** — Analysis, experimentation, and documentation
+- 🧑‍💻 **VS Code** — Project development and code management
+- 🔧 **Git & GitHub** — Version control and project hosting
+
 ## 🗂️ Dataset
 
 The project uses the **IBM HR Analytics Employee Attrition dataset**.
