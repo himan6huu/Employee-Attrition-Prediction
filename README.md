@@ -199,6 +199,27 @@ Employee-Attrition-Prediction/
 
 These findings can help HR teams identify higher-risk employee segments and design targeted retention strategies.
 
+## 🤖 Model Performance
+
+Three classification approaches were evaluated for employee attrition prediction:
+
+| Model | Purpose |
+|---|---|
+| Logistic Regression | Interpretable baseline classification model |
+| Balanced Logistic Regression | Addresses class imbalance |
+| Random Forest | Non-linear ensemble model for improved predictive performance |
+
+Model performance was evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
+- Confusion Matrix
+
+The project also compares model predictions using ROC curves and confusion matrices to understand both overall performance and classification errors.
+
 ## 🔄 Project Workflow
 
 ```text
