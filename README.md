@@ -203,17 +203,6 @@ The analysis highlights several employee attributes associated with attrition:
 
 These findings can help HR teams focus retention efforts on employees and workforce segments with higher potential attrition risk.
 
-## 💡 Key Business Insights
-
-- **Overtime is a major attrition indicator** — employees working overtime show noticeably higher attrition.
-- **Job satisfaction is associated with employee retention** — lower satisfaction levels are linked with increased attrition.
-- **Job role influences attrition risk** — attrition varies considerably across different job roles.
-- **Business travel affects retention** — employees with frequent business travel show different attrition patterns.
-- **Job level and compensation matter** — employee seniority and monthly income show meaningful relationships with attrition.
-- **Distance from home can influence attrition** — employees living farther from the workplace exhibit different attrition patterns.
-- **Tenure matters** — years at the company provides useful insight into employee retention and potential turnover risk.
-
-These findings can help HR teams identify higher-risk employee segments and design targeted retention strategies.
 
 ## 🤖 Model Performance
 
